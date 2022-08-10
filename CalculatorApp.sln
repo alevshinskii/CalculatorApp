@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{8BB67753-FF75-4D20-9F9E-75BC4F63B793}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4E02CAAF-DF9D-4FD7-BFFC-651B077F5767}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{91F58361-3F93-48D3-B653-D1680C6D5A38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "src\Calculator\Calculator.csproj", "{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,16 +15,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8BB67753-FF75-4D20-9F9E-75BC4F63B793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BB67753-FF75-4D20-9F9E-75BC4F63B793}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BB67753-FF75-4D20-9F9E-75BC4F63B793}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BB67753-FF75-4D20-9F9E-75BC4F63B793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8BB67753-FF75-4D20-9F9E-75BC4F63B793} = {4E02CAAF-DF9D-4FD7-BFFC-651B077F5767}
+		{D8DD3CCA-FE6D-469C-AAB6-DB5F03B47D2B} = {4E02CAAF-DF9D-4FD7-BFFC-651B077F5767}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19EF9AC8-7FDE-4B69-9017-18EA7F957B98}
