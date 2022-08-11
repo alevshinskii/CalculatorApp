@@ -5,4 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: generator
-              run: cd Calculator.Test && dotnet test --collect:"XPlat Code Coverage"
+              run: cd /tests/Calculator.Test && dotnet test --collect:"XPlat Code Coverage"
