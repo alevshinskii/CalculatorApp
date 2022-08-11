@@ -1,11 +1,8 @@
 name: Build and Deploy
-on:
-    push:
-        branches:
-            - master
+on: [push]
 jobs:
     generate-report:
         runs-on: ubuntu-latest
         steps:
             - name: generator
-              uses: dotnet test --collect:"XPlat Code Coverage" added to git action
+              run: dotnet test --collect:"XPlat Code Coverage" added to git action
