@@ -1,16 +1,18 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+using CalculatorLibrary;
 
-namespace Calculator.Test
+namespace CalculatorLibrary.Test
 {
     public class CalculatorTest
     {
         [Fact]
         public void ShouldDoAddition()
         {
+            Calculator calculator = new Calculator();
             var num1 = 1;
             var num2 = 2;
             var op = "a";
-            var result = Calculator.DoOperation(num1, num2, op);
+            var result = calculator.DoOperation(num1, num2, op);
+            calculator.Finish();
             Assert.Equal(3,result);
 
         }
@@ -18,10 +20,12 @@ namespace Calculator.Test
         [Fact]
         public void ShouldDoSubtract()
         {
+            Calculator calculator = new Calculator();
             var num1 = 1;
             var num2 = 2;
             var op = "s";
-            var result = Calculator.DoOperation(num1, num2, op);
+            var result = calculator.DoOperation(num1, num2, op);
+            calculator.Finish();
             Assert.Equal(-1,result);
 
         }
@@ -29,10 +33,13 @@ namespace Calculator.Test
         [Fact]
         public void ShouldDoMultiply()
         {
+            Calculator calculator = new Calculator();
+
             var num1 = 1;
             var num2 = 2;
             var op = "m";
-            var result = Calculator.DoOperation(num1, num2, op);
+            var result = calculator.DoOperation(num1, num2, op);
+            calculator.Finish();
             Assert.Equal(2,result);
 
         }
@@ -40,10 +47,13 @@ namespace Calculator.Test
         [Fact]
         public void ShouldDoDivide()
         {
+            Calculator calculator = new Calculator();
+
             var num1 = 1;
             var num2 = 2;
             var op = "d";
-            var result = Calculator.DoOperation(num1, num2, op);
+            var result = calculator.DoOperation(num1, num2, op);
+            calculator.Finish();
             Assert.Equal(0.5,result);
 
         }
@@ -51,10 +61,15 @@ namespace Calculator.Test
         [Fact]
         public void ShouldDoNothingWhenOperationLetterUnknown()
         {
+            Calculator calculator = new Calculator();
+
             var num1 = 1;
             var num2 = 2;
             var op = "f";
-            var result = Calculator.DoOperation(num1, num2, op);
+            
+            var result = calculator.DoOperation(num1, num2, op);
+
+            calculator.Finish();
             Assert.Equal(double.NaN,result);
 
         }
